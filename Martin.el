@@ -43,37 +43,36 @@
 
 ;;; Code:
 
-(deftheme ir-black-MO "Port of ir-black theme")
+(deftheme ir-black "Port of ir-black theme")
 
-(let ((*background-color*   "#3b7054")
+(let ((*background-color*   "#000000")
       (*brown*              "#E64")
-      (*comments*           "#FF0000")
-      (*constant*           "#008080")
-      (*current-line*       "#1A1D2B")
-      (*cursor-block*       "#FFA560")
-      (*cursor-underscore*  "#8888AA")
-      (*keywords*           "#CC33CC")
+      (*comments*           "#7C7C7C")
+      (*constant*           "#99CC99")
+      (*current-line*       "#151515")
+      (*cursor-underscore*  "#FFFAAA")
+      (*keywords*           "#96CBFE")
       (*light-purple*       "#FFCCFF")
-      (*line-number*        "#111")
-      (*method-declaration* "#3300CC")
+      (*line-number*        "#3D3D3D")
+      (*method-declaration* "#FFD2A7")
       (*mode-line-bg*       "#202020")
-      (*mode-line-fg*       "#FFA560")
+      (*mode-line-fg*       "#CCCCCC")
       (*normal*             "#F6F3E8")
       (*number*             "#FF73FD")
-      (*operators*          "#228B22")
+      (*operators*          "#FFFFB6")
       (*red*                "#FF6C60")
       (*red-light*          "#FFB6B0")
       (*regexp*             "#E9C")
       (*regexp-alternate*   "#FF0")
       (*regexp-alternate-2* "#B18A3D")
       (*search-selection*   "#2F2F00")
-      (*string*             "#8B008B")
+      (*string*             "#A8FF60")
       (*string-inner*       "#00A0A0")
-      (*variable*           "#C76114")
-      (*visual-selection*   "#FFA560"))
+      (*variable*           "#C6C5FE")
+      (*visual-selection*   "#262D51"))
 
   (custom-theme-set-faces
-   'ir-black-MO
+   'ir-black
 
    `(bold ((t (:bold t))))
    `(button ((t (:foreground, *keywords* :underline t))))
@@ -150,5 +149,5 @@
 ;; no-byte-compile: t
 ;; End:
 
-(provide-theme 'ir-black-MO)
+(provide-theme 'ir-black)
 ;;; ir-black-theme.el ends here
